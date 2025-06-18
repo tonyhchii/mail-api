@@ -3,7 +3,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const contactRoutes = require("./routes/contact");
 
-import rateLimit from "express-rate-limit";
+const rateLimit = require("express-rate-limit");
 
 const contactLimiter = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 hour
